@@ -1,39 +1,57 @@
-var studente = {
-    nome: 'Lorenzo',
-    cognome: 'Calzi',
-    età: 21
+/* Studente inserito dall'utente */
+var userStudent = {
+    Nome: prompt('Inserisci il nome'),
+    Cognome: prompt('Inserisci il cognome'),
+    Età: Number(prompt('Inserisci l\'età'))
+}
+for (var key in userStudent) {
+    userStudent[key]
+    console.log(key + ': ' + userStudent[key]);
 }
 
+/* Creato oggetto studente e stampate le proprietà */
+var studente = {
+    Nome: 'Lorenzo',
+    Cognome: 'Calzi',
+    Età: 21
+}
 for (var key in studente) {
     studente[key]
     console.log(key + ': ' + studente[key]);
 }
 
 
+/* Array di studenti */
 var studenti = [
     {
-        nome: 'Francesco',
-        cognome: 'Rossi',
-        età: 43
+        Nome: 'Francesco',
+        Cognome: 'Rossi',
+        Età: 43
     },
     {
-        nome: 'Alberto',
-        cognome: 'Bianchi',
-        età: 18
+        Nome: 'Alberto',
+        Cognome: 'Bianchi',
+        Età: 18
     },
     {
-        nome: 'Franco',
-        cognome: 'Costa',
-        età: 67
+        Nome: 'Franco',
+        Cognome: 'Costa',
+        Età: 67
     },
     {
-        nome: 'Andrea',
-        cognome: 'Romano',
-        età: 35
+        Nome: 'Andrea',
+        Cognome: 'Romano',
+        Età: 35
     }
 ]
 
+/* Aggiunto userStudent all'array di studenti */
+studenti.push(userStudent);
+
+/* Stampa di Nome e Cognome dell'array di studenti  */
 for(var i = 0; i < studenti.length; i++) {
     var studEl = studenti[i];
-    console.log('Dati: ' + studEl.nome +  ' ' + studEl.cognome);
+    console.log('Dati: ' + studEl.Nome +  ' ' + studEl.Cognome);
 }
+
+
