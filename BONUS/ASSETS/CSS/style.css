@@ -1,0 +1,32 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.dates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prof{
+    background-color: darkcyan;
+}
+
+#user_student{
+    background-color: blue; 
+}
+#lista_studenti{
+    display: block;
+   
+}
+
+.card{
+    padding: 30px;
+    margin: 20px;  
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.card span{
+    font-size: 45px;
+    font-weight: 700;
+   color: white;
+}
